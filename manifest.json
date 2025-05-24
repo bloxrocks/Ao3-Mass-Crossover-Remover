@@ -1,0 +1,21 @@
+{
+    "name": "Remove massive ao3 crossovers",
+    "description": "removes massive crossovers (currently hardcoded as 5 or more) from ao3",
+    "version": "0.9.1",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "icon.png"
+    },
+
+    "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://archiveofourown.org/works*",
+        "https://archiveofourown.org/tags/*/works"
+      ]
+    }
+  ]
+
+  }
